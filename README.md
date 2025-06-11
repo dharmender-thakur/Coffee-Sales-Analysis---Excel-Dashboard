@@ -109,7 +109,7 @@ An easy-to-use **dashboard brings everything together**:
 
 ## 🧭 How to Navigate the Dashboard
 
-1. Open `Final_Dashboard.xlsx` in Excel  
+1. Open `Coffee Sales Dashboard.xlsx` in Excel  
 2. Use **slicers** and **filters** to explore specific regions, customers, or product types  
 3. Hover over charts for dynamic insights  
 4. Toggle between sheets for **sales trends, customer analysis, and product breakdowns**
