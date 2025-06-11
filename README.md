@@ -13,35 +13,49 @@ This project dives into sales data to answer critical business questions:
 
 By applying **Excel-based data cleaning, functions, and dashboard techniques**, we converted complex data into actionable insights.
 
-![Final Dashboard](https://github.com/dharmender-thakur/-Coffee-Sales-Analysis---Excel-Dashboard/blob/fa6af5460adfc6082cbc2cd279f8b25781baa093/CoffeeSalessDashboard "dashboard (2).png")
 
----
+
 ---
 
 ## 📁 Dataset Overview
+The Power BI dashboard provides insights into:
 
-The dataset is structured into **three primary tables**, each playing a unique role in the analysis:
+- **Total Sales Over Time** (by coffee type)
+- **Sales by Country**
+- **Top 5 Customers**
+- Filters for:
+  - **Order Date**
+  - **Roast Type** (Dark, Medium, Light)
+  - **Coffee Size** (0.2 kg, 0.5 kg, etc.)
+  - **Loyalty Card Holders**
 
-### 📦 1. Orders Table  
-Captures transactional-level data:
-- `Order ID` – Unique order reference  
-- `Order Date` – When the purchase was made  
-- `Customer ID` – Buyer identification  
-- `Product ID` – Type of coffee purchased  
-- `Quantity`, `Sales Amount` – Key revenue metrics  
-- `Country`, `Coffee Type`, `Roast Type` – Buyer and product details  
-- `Loyalty Program` – Customer membership status  
+![Coffee Sales Dashboard](https://raw.githubusercontent.com/your-username/your-repo-name/main/dashboard.png)
 
-### 👤 2. Customers Table  
-Provides demographic and contact information:
-- `Customer Name`, `Email`, `Phone Number`  
-- `Address`, `Country`  
-- `Loyalty Membership` – Repeat buyer indicator  
+---
 
-### ☕ 3. Products Table  
-Details product specs and financial metrics:
-- `Product ID`, `Coffee Type`, `Roast Type`  
-- `Size`, `Unit Price`, `Profit Margin`
+## 📁 Dataset Description
+
+Each row in the dataset represents a transaction made by a customer. The key columns include:
+
+| Column Name         | Description                                               |
+|---------------------|-----------------------------------------------------------|
+| Product ID          | Unique identifier for the product                         |
+| Quantity            | Number of units purchased                                 |
+| Customer Name       | Name of the customer                                      |
+| Email               | Customer email address                                    |
+| Country             | Country of purchase                                       |
+| Coffee Type         | Short code for type (e.g., Rob, Ara, Exc, Lib)            |
+| Roast Type          | Roast level (Dark, Medium, Light)                         |
+| Size                | Package weight (e.g., 0.2 kg, 2.5 kg)                      |
+| Unit Price          | Price per unit in USD                                     |
+| Sales               | Total sales value (Quantity × Unit Price)                 |
+| Coffee Type Name    | Full coffee type name (e.g., Robusta, Arabica, etc.)      |
+| Roast Type Name     | Full roast type name                                      |
+| Loyalty Card        | Indicates if the customer is a loyalty card holder (Yes/No) |
+
+---
+
+
 
 ---
 
