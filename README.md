@@ -22,43 +22,50 @@ The dataset is structured into **three primary tables**, each playing a unique r
 
 ### 📦 1. Orders Table  
 Captures transactional-level data:
-- `Order ID` – Unique order reference  
-- `Order Date` – When the purchase was made  
-- `Customer ID` – Buyer identification  
-- `Product ID` – Type of coffee purchased  
-- `Quantity`, `Sales Amount` – Key revenue metrics  
-- `Country`, `Coffee Type`, `Roast Type` – Buyer and product details  
-- `Loyalty Program` – Customer membership status
+### 1️⃣ Orders Data 📦
+This table tracks every coffee sale made, capturing essential transaction details:
+- **Order ID** – Unique identifier for each purchase.
+- **Order Date** – The date when the order was placed.
+- **Customer ID** – Links to the customer who placed the order.
+- **Product ID** – Identifies the type of coffee sold.
+- **Quantity** – The number of coffee units bought.
+- **Sales Amount** – Total revenue from the sale.
+- **Country** – The country where the order was placed.
+- **Coffee Type & Roast Type** – Specific details about the coffee purchased.
+- **Loyalty Program** – Indicates if the customer is part of the loyalty scheme.
 
  ![Dataset](https://github.com/dharmender-thakur/Coffee-Sales-Analysis---Excel-Dashboard/blob/2f53d94475e9ccaae1733697aafa7470b78bdbec/CoffeeSalesDataset.png)
 
-### 👤 2. Customers Table  
-Provides demographic and contact information:
-- `Customer Name`, `Email`, `Phone Number`  
-- `Address`, `Country`  
-- `Loyalty Membership` – Repeat buyer indicator  
+### 2️⃣ Customers Data 👥
+This table gives us insight into who is buying the coffee:
+- **Customer Name** – Identifies the buyer.
+- **Email & Phone Number** – Contact details.
+- **Address & Country** – Location insights.
+- **Loyalty Program Membership** – Helps track repeat customers.
 
-### ☕ 3. Products Table  
-Details product specs and financial metrics:
-- `Product ID`, `Coffee Type`, `Roast Type`  
-- `Size`, `Unit Price`, `Profit Margin`
-
+### ☕ ### 3️⃣ Products Data ☕
+This table focuses on coffee varieties and their pricing:
+- **Product ID** – Unique identifier for each coffee type.
+- **Coffee Type** – Arabica, Robusta, Excelsa, Liberica.
+- **Roast Type** – Light, Medium, or Dark roast.
+- **Size** – The weight of the coffee pack.
+- **Unit Price** – The selling price per unit.
+- **Profit Margin** – The amount of profit per sale.
 ---
 
 ## 🛠 Data Cleaning & Preparation in Excel
 
 To turn raw data into insights, the following preprocessing steps were done:
-
-- 🔗 **Lookup Integration**: Used `XLOOKUP` and `INDEX MATCH` to bring together customer and product details with transactions.  
-- 🚫 **Missing & Duplicate Handling**: Removed redundant entries and filled critical gaps.  
-- 📊 **Metric Creation**: Computed new fields like revenue per customer and product-level profits.  
-- 📅 **Date Formatting**: Organized time-based insights using `MONTH()`, `YEAR()` functions for trend analysis.
+-**🔹 Cleaning the Dataset:** Identified and removed duplicate entries while addressing missing values to maintain data integrity.
+-**🔹 Data Integration:** Used XLOOKUP and INDEX-MATCH functions to bring actual customer names and coffee product details into the orders table from customer and product tables.
+-**🔹 New Metrics:** Created calculated fields such as total sales per transaction, customer-level revenue, and profit margins to support deeper business insights.
 
 ---
 
 ## 📊 Key Findings
 
 ### 👥 1. Top Customers  
+
 - Top customers contribute a **significant share** of total revenue.  
 - Members of the loyalty program purchase **larger pack sizes** more frequently.  
 - **Repeat buyers** show higher lifetime value.
@@ -95,8 +102,8 @@ An easy-to-use **dashboard brings everything together**:
 
 ## 📂 Files Included
 
-- `Final_Dashboard.xlsx` – Interactive dashboard for exploration  
-- `coffeeOrders_Data.xlsx` – Raw and cleaned dataset  
+- `Coffee Sales Dashboard.xlsx` – Interactive dashboard for exploration  
+- `Coffee Sales Dataset.xlsx` – Raw and cleaned dataset  
 
 ---
 
