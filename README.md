@@ -13,6 +13,9 @@ This project dives into sales data to answer critical business questions:
 
 By applying **Excel-based data cleaning, functions, and dashboard techniques**, we converted complex data into actionable insights.
 
+![Final Dashboard](https://github.com/dharmender-thakur/-Coffee-Sales-Analysis---Excel-Dashboard/blob/fa6af5460adfc6082cbc2cd279f8b25781baa093/CoffeeSalessDashboard "dashboard (2).png")
+
+---
 ---
 
 ## 📁 Dataset Overview
